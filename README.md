@@ -17,13 +17,13 @@ A biblioteca Watchdog funciona através de "observadores" que monitoram um diret
 # Exemplos de Uso
 A Watchdog pode ser usada em diversos cenários práticos:
 
-Automação de backup: Toda vez que um arquivo for adicionado ou modificado em um diretório, um script pode ser executado para fazer backup automático.
+* Automação de backup: Toda vez que um arquivo for adicionado ou modificado em um diretório, um script pode ser executado para fazer backup automático.
 
-Processamento de arquivos: Em pipelines de dados, quando um novo arquivo de dados é adicionado a um diretório, o Watchdog pode iniciar o processamento automaticamente.
+* Processamento de arquivos: Em pipelines de dados, quando um novo arquivo de dados é adicionado a um diretório, o Watchdog pode iniciar o processamento automaticamente.
 
-Sincronização de arquivos: Para sincronizar automaticamente diretórios locais com diretórios na nuvem sempre que ocorrer uma mudança.
+* Sincronização de arquivos: Para sincronizar automaticamente diretórios locais com diretórios na nuvem sempre que ocorrer uma mudança.
 
-Segurança e monitoramento: Pode ser usado para monitorar alterações não autorizadas em arquivos sensíveis, disparando alertas em tempo real.
+* Segurança e monitoramento: Pode ser usado para monitorar alterações não autorizadas em arquivos sensíveis, disparando alertas em tempo real.
 
 ## Funcionalidades
 
