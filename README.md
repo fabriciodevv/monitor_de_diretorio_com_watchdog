@@ -43,3 +43,40 @@ Para instalar o Watchdog, você pode utilizar o **pip**:
 
 ```bash
 pip install watchdog
+````
+
+#EXEMPLO DE APLICAÇÃO, MONITORANDO UM DIRETÓRIO DE ARQUIVOS
+
+```
+import time
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+
+class MonitoramentoHandler(FileSystemEventHandler):
+    def on_created(self, event):
+        print(f"Arquivo ou diretório criado: {event.src_path}")
+    
+    def on_modified(self, event):
+        print(f"Arquivo ou diretório modificado: {event.src_path}")
+    
+    def on_deleted(self, event):
+        print(f"Arquivo ou diretório excluído: {event.src_path}")
+    
+    def on_moved(self, event):
+        print(f"Arquivo ou diretório movido: {event.src_path}")
+
+if __name__ == "__main__":
+    path = "./diretorio_para_monitorar"
+    event_handler = MonitoramentoHandler()
+    observer = Observer()
+    observer.schedule(event_handler, path, recursive=True)
+    observer.start()
+    
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
+    observer.join()
+
+
