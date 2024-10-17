@@ -1,8 +1,10 @@
 # monitor_de_diretorio_com_watchdog
 
-# Watchdog API em Python
+# Introdução Watchdog API em Python
 
-Este repositório contém um exemplo de uso da API **Watchdog** em Python, que permite monitorar eventos do sistema de arquivos, como criação, modificação, exclusão e movimentação de arquivos e diretórios em tempo real.
+
+Watchdog é uma biblioteca multiplataforma, o que significa que funciona em sistemas como Windows, macOS e Linux. Ela facilita o monitoramento contínuo de diretórios, sem precisar de verificações manuais ou repetitivas. Em vez de ficar checando constantemente se um arquivo foi alterado, a Watchdog utiliza observadores para detectar automaticamente qualquer evento de sistema de arquivos.
+
 
 ## Funcionalidades
 
