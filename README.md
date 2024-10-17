@@ -1,6 +1,6 @@
 
 
-# Introdução Watchdog API em Python
+# Introdução Watchdog API em Python 🐍
 
 Watchdog é uma biblioteca multiplataforma, o que significa que funciona em sistemas como Windows, macOS e Linux. Ela facilita o monitoramento contínuo de diretórios, sem precisar de verificações manuais ou repetitivas. Em vez de ficar checando constantemente se um arquivo foi alterado, a Watchdog utiliza observadores para detectar automaticamente qualquer evento de sistema de arquivos.
 
